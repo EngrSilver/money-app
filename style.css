@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --My-default-width: 500px;
+  --My-default-background-color: rgba(255, 235, 205, 0.543);
+}
+body {
+  /* display: flex; */
+  /* text-align: center;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-items: center;
+}
+.body-container {
+  /* box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: grid;
+  width: 450px;
+  place-items: center;
+  margin-top: 25px;
+}
+.header {
+  min-width: 400px;
+  background-color: white;
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-bar {
+  width: 60%;
+  height: 2rem;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.424);
+}
+button {
+  transform: scale(1.5);
+  border: none;
+  color: #fff;
+  background-color: aliceblue;
+  border-radius: 10%;
+  color: rgba(0, 0, 0, 0.453);
+}
+button:hover {
+  cursor: pointer;
+}
+
+/* styling the body*/
+
+.content {
+  border: 2px solid rgba(0, 191, 255, 0.125);
+  background-color: rgba(255, 235, 205, 0.782);
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  flex-direction: column;
+}
+.favorite-text {
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.food-items {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.Food-item {
+  position: relative;
+  text-align: center;
+}
+.remove-fav {
+  left: 10%;
+  top: 10%;
+  position: absolute;
+}
+.remove-fav .fa-close {
+  color: black;
+  transform: scale(0.7);
+}
+
+.remove-fav .fa-close:hover {
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.image-container img {
+  height: 65px;
+  width: 65px;
+  /* object-fit: contain; */
+  border-radius: 50%;
+  border: 4px solid rgba(128, 128, 128, 0.389);
+}
+
+/* random part */
+
+.random-part {
+  /* width: var(--My-default-width); */
+  width: 400px;
+  padding: 15px;
+  /* height: 300px; */
+  position: relative;
+  margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.random-recipe {
+  padding: 10px;
+  width: fit-content;
+  background-color: var(--My-default-background-color);
+  position: absolute;
+  top: 10%;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.random-image {
+  /* width: 280px; */
+}
+.random-image img {
+  width: 100%;
+  border-radius: 0.3em;
+}
+
+/* favourite part */
+
+.favourite-part {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  color: black;
+}
+.name-of-ranom-food {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.favourite-icon{
+  color: rgba(0, 0, 0, 0.453);
+}
+.red {
+  color: red;
+}
